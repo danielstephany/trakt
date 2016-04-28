@@ -1,0 +1,135 @@
+/* search container *********************************************/
+
+.search-box {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	height: 100%;
+	width: 45px;
+	overflow: hidden;
+	z-index: 20;
+	transition: all 0.4s linear;
+	.search-container {
+		display: block;
+		min-width: 320px;
+		max-width: 450px;
+		height: 45px;
+		position: relative;
+	}
+	.search {
+		background-color: transparent;
+		color: #fff;
+		width: 45px;
+		height: 100%;
+		font-size: 16px;
+		line-height: 45px;
+		padding: 0 14px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 0.4s linear;
+	}
+	label {
+		overflow: hidden;
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.movies-toggle {
+	display: block;
+	text-align: center;
+	line-height: 45px;
+	font-size: 14px;
+	color: #353535;
+	&:after {
+		display: inline-block;
+		border-top: 5px solid #353535;
+		border-right: 5px solid transparent;
+		border-left: 5px solid transparent;
+		content: '';
+		color: #353535;
+		width: 0;
+		height: 0;
+		margin: 0 0 0 5px;
+	} 
+}
+
+.search-list-container {
+	display: inline-block;
+	border-left: 1px solid #bbb;
+	background-color: #ddd;
+	width: calc(50% - 20px);
+	height: 45px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+.input-box {
+	display: inline-block;
+	background: #fff;
+	width: calc(50% - 25px);
+	height: 100%;
+	padding: 1px 0 1px 10px;
+	position: absolute;
+	top: 0;
+	left: 45px;
+	input[type = "text"] {
+		display: inline-block;
+		background-color: transparent;
+		border: none;
+		outline: none;
+		height: 45px;
+		width: 100%;
+		line-height: 45px;
+		font-size: 14px;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.search-list {
+	display: none;
+	background-color: #fff;
+	width: 100%;
+	min-width: 140px;
+	height: auto;
+	margin: 0;
+	padding: 10px 0;
+	position: absolute;
+	top: 45px;
+	right: 0;
+	text-align: left;
+	li {
+		display: block;
+		a {
+			display: block;
+			background-color: #fff;
+			color: #000;
+			font-size: 12px;
+			padding: 5px 0 5px 20px;
+			transition: all 0.2s linear;
+			&:hover {
+				background-color: #ddd;
+			}
+		}
+	}
+	.list-break {
+		height: 1px;
+		background-color: #ddd;
+		margin: 5px 0;
+
+	}
+}
+
+.open-search {
+	width: 100% !important;
+	.search {
+		background-color: #ed1c24;
+	}
+}

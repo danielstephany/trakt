@@ -1,0 +1,41 @@
+/* mobile nav *******************************************/
+
+.nav-mobile {
+	background: transparent;
+	height: 40px;
+	position: absolute;
+	top: -45px;
+	right: 0;
+	left: 0;
+	text-align: center;
+	transition: all 0.4s linear;
+	li {
+		padding: 0 3px;
+		a {
+			font-size: 0.9em;
+			line-height: 40px;
+		}
+	}
+}
+
+.open {
+	background: #000 !important;
+	.nav-mobile {
+		top: 45px;
+		background: #000;
+	}
+	.logo-box {
+		top: 0;
+	}
+	.logo {
+		width: 30px;
+		left: 5px;
+		top: calc(50% - 15px);
+		opacity: 1;
+		z-index: 1;
+	}
+	.search-box {
+		opacity: 0;
+	}
+}
+

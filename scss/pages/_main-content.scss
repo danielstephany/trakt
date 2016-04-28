@@ -1,0 +1,38 @@
+
+.section-content-2 {
+	.row {
+		height: 100%;
+	}
+	.container {
+		height: 100%;
+	}
+}
+
+.section-container {
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.section-article {
+	display: block;
+	width: 100%;
+	padding: 0 10px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.brand-pic-container {
+	display: block;
+	margin: 0 0 30px;
+	padding: 0;
+	text-align: center;
+	img {
+		width: auto;
+		height: 35px;
+		margin: 0;
+		padding: 5px 5px;
+	}
+}

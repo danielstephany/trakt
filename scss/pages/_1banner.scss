@@ -1,0 +1,154 @@
+/* banner ***********************************************/
+
+.banner {
+	position: relative;
+	height: 100%;
+}
+
+.banner-container {
+	display: block;
+	width: 100%;
+	padding: 0 30px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	left: 0;
+	transform: translateY(-50%);
+	text-align: center;
+	@media (min-width: $screen-sm-min) {
+		max-width: 375px;
+		right: initial;
+		padding: 0;
+		text-align: left;
+		top: 40%;
+		left: 20px;
+	}
+}
+
+.banner-logo {
+	display: inline-block;
+	border-bottom: 1px solid #999;
+	width: auto;
+	margin: 0 0 30px;
+	text-align: center;
+	padding: 0 0 30px;
+	@media (min-width: $screen-sm-min) {
+		display: none;
+	}
+	img {
+		display: inline-block;
+		width: 50px;
+		height: auto;
+	}
+	h1 {
+		display: inline-block;
+		color: #fff;
+		margin: 0;
+		padding: 0 0 0 10px;
+		font-size: 40px;
+		line-height: 50px;
+		vertical-align: middle;
+	}
+}
+
+.section-h1 {
+	display: none;
+	color: #fff;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 50px;
+	font-size: 42px;
+	font-weight: 400;
+	@media (min-width: $screen-sm-min) {
+		display: block;
+		margin: 0 0 20px;
+	}
+}
+
+.section-h2 {
+	display: block;
+	color: #fff;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 50px;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.hide-md {
+	@media (min-width: $screen-sm-min) {
+		display: none;
+	}
+}
+
+.section-btn-1,
+.section-btn-2 {
+	display: block;
+	margin: 0 auto 15px;
+	color: #fff;
+	width: 130px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	@media (min-width: $screen-sm-min) {
+		display: inline-block;
+		margin: 0;
+	}
+}
+
+.section-btn-2 {
+	background: $red;
+}
+
+.section-btn-1 {
+	background: rgba(0,0,0,0.4);
+	@media (min-width: $screen-sm-min) {
+		background: transparent;
+		width: 100px;
+		text-decoration: underline;
+	}
+}
+
+
+.currently-watching {
+	display: none;
+	background: rgba(0,0,0,0.8);
+	width: auto;
+	padding: 15px;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	@media (min-width: $screen-sm-min) {
+		display: block;
+	}
+	img {
+		display: inline-block;
+		border-radius: 50%;
+		border: 3px solid #666;
+		width: 60px;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+	p {
+		display: inline-block;
+		color: #fff;
+		font-weight: 300;
+		font-size: 12px;
+		padding: 0 0 0 15px;
+		margin: 0;
+		vertical-align: middle;
+	}
+	span {
+		font-size: 12px;
+		font-weight: 400;
+	}
+}
+
+
+
+
+
+
+
