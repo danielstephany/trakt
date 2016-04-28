@@ -1,13 +1,22 @@
 .header {
 	display: block;
 	height: 45px;
-	background: transparent;
+	background-color: transparent;
 	position: relative;
 	text-align: center;
 	transition: all 0.4s linear;
 	@media (min-width: $screen-sm-min) {
 		background: rgba(0,0,0,0.4);
 		height: 48px;
+	}
+}
+
+.header-open {
+	background: rgba(0,0,0,0.4);
+	transition: all 0.3s linear;
+	.logo {
+		opacity: 1;
+		z-index: 1;
 	}
 }
 
@@ -37,12 +46,13 @@
 	}
 }
 
+
 .logo {
 	display: inline-block;
 	width: 50px;
 	height: auto;
 	position: absolute;
-	top: 0;
+	top: 10px;
 	left: calc(50% - 25px);
 	opacity: 0;
 	z-index: -1;

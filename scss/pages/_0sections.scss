@@ -7,35 +7,39 @@
 }
 
 #section-1 {
-	height: 650px;
+	height: 805px;
 	background: url(../img/hero/hero-1-s.jpg) no-repeat center center;
 	background-size: cover;
 	@media (min-width: $screen-sm-min) {
 		background: url(../img/hero/hero-1.jpg) no-repeat center center;
+		height: 650px;
 	}
 }
 #section-2 {
-	height: 650px;
+	height: 805px;
 	background: url(../img/hero/hero-2-s.jpg) no-repeat center center;
 	background-size: cover;
 	@media (min-width: $screen-sm-min) {
 		background: url(../img/hero/hero-2.jpg) no-repeat center center;
+		height: 650px;
 	}
 }
 #section-3 {
-	height: 650px;
+	height: 805px;
 	background: url(../img/hero/hero-3-s.jpg) no-repeat center center;
 	background-size: cover;
 	@media (min-width: $screen-sm-min) {
 		background: url(../img/hero/hero-3.jpg) no-repeat center center;
+		height: 650px;
 	}
 }
 #section-4 {
-	height: 650px;
+	height: 805px;
 	background: url(../img/hero/hero-4-s.jpg) no-repeat center center;
 	background-size: cover;
 	@media (min-width: $screen-sm-min) {
 		background: url(../img/hero/hero-4.jpg) no-repeat center center;
+		height: 650px;
 	}
 }
 

@@ -32,3 +32,15 @@ $('.movies-toggle').click(function() {
 	$('.search-list').slideToggle(400);
 	$('.search-list').toggleClass("list-open");
 });
+
+$(window).scroll(function(){
+	var scrollP = $(window).scrollTop();
+	if (scrollP > 0 && scrollP < 300) {
+		if (scrollP > 150) {
+			$('#header').addClass("header-open");
+		} 
+		if (scrollP < 140) {
+			$('#header').removeClass("header-open");
+		}
+	}
+});
