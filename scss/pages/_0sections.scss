@@ -43,6 +43,30 @@
 	}
 }
 
+#section-5 {
+	height: 805px;
+	background: url(../img/hero/hero-5-s.jpg) no-repeat center center;
+	background-size: cover;
+	@media (min-width: $screen-sm-min) {
+		background: url(../img/hero/hero-5.jpg) no-repeat center center;
+		height: 300px;
+		background-size: cover;
+		background-position: 80% center;
+	}
+}
+
+#section-6 {
+	height: 400px;
+	background: url(../img/hero/hero-6-s.jpg) no-repeat center center;
+	background-size: 560px 320px;
+	background-position: bottom center;
+	@media (min-width: $screen-xs-min) {
+		background: url(../img/hero/hero-6.jpg) no-repeat center center;
+		height: 650px;
+		background-size: 1400px 700px;
+	}
+}
+
 .color-overlay {
 	display: block;
 	width: 100%;

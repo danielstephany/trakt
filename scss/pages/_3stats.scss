@@ -1,0 +1,53 @@
+.stats-container {
+	background: #454545;
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	li {
+		display: inline-block;
+		height: 70px;
+		margin: 0;
+		float: right;
+		font-size: 18px;
+	}
+}
+
+.plays {
+	width: 100%;
+	background: $red;
+	padding: 20px 0;
+	@media (min-width: $screen-sm-min) {
+		width: 40%;
+	}
+
+}
+
+.shows {
+	width: 33.3%;
+	background: $blue;
+	padding: 10px 0;
+	@media (min-width: $screen-sm-min) {
+		width: 20%;
+	}
+}
+
+.episodes {
+	width: 33.3%;
+	background: $purple;
+	padding: 10px 0;
+	@media (min-width: $screen-sm-min) {
+		width: 20%;
+	}
+}
+
+.movies {
+	width: 33.3%;
+	background: $green;
+	padding: 10px 0;
+	@media (min-width: $screen-sm-min) {
+		width: 20%;
+	}
+}

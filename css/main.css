@@ -6224,12 +6224,18 @@ a {
   font-size: 1rem;
   text-decoration: none; }
   a:hover, a:active {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #fff; }
 
 span {
   color: #fff;
   font-size: 1rem;
   line-height: 1rem; }
+
+.clear::after {
+  display: table;
+  content: '';
+  clear: both; }
 
 .header {
   display: block;
@@ -6554,6 +6560,76 @@ span {
   .open-search .search {
     background-color: #ed1c24; }
 
+.footer {
+  background: #000;
+  padding: 15px;
+  margin: 0; }
+
+@media (min-width: 768px) {
+  .foot-section {
+    padding: 10px 0; } }
+
+@media (min-width: 768px) {
+  .foot-nav {
+    float: left; } }
+
+.foot-nav li {
+  padding: 0 20px 0 0; }
+  .foot-nav li a {
+    font-size: 12px;
+    font-weight: 300; }
+
+.social {
+  margin: 10px 0; }
+  @media (min-width: 768px) {
+    .social {
+      float: right;
+      margin: 0; } }
+  .social li {
+    padding-right: 5px; }
+    .social li i {
+      color: #fff; }
+
+@media (min-width: 768px) {
+  .trakt-copy {
+    float: left; } }
+
+.trakt-copy img {
+  display: inline-block;
+  height: 30px;
+  width: auto;
+  opacity: 0.3;
+  margin: 0 10px 0 0; }
+
+.trakt-copy p {
+  display: inline-block;
+  color: #777;
+  font-size: 10px;
+  vertical-align: middle;
+  margin: 0; }
+
+.amazon {
+  margin-top: 15px; }
+  @media (min-width: 768px) {
+    .amazon {
+      float: right;
+      margin: 0; } }
+  .amazon span {
+    display: inline-block;
+    height: 30px;
+    font-size: 30px;
+    opacity: 0.3;
+    margin: 0 10px 0 0; }
+    @media (min-width: 768px) {
+      .amazon span {
+        float: right;
+        margin: 0 0 0 10px; } }
+  .amazon p {
+    display: inline-block;
+    color: #777;
+    font-size: 10px;
+    margin: 0; }
+
 .section-content-1,
 .section-content-2 {
   display: block;
@@ -6596,6 +6672,28 @@ span {
     #section-4 {
       background: url(../img/hero/hero-4.jpg) no-repeat center center;
       height: 650px; } }
+
+#section-5 {
+  height: 805px;
+  background: url(../img/hero/hero-5-s.jpg) no-repeat center center;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #section-5 {
+      background: url(../img/hero/hero-5.jpg) no-repeat center center;
+      height: 300px;
+      background-size: cover;
+      background-position: 80% center; } }
+
+#section-6 {
+  height: 400px;
+  background: url(../img/hero/hero-6-s.jpg) no-repeat center center;
+  background-size: 560px 320px;
+  background-position: bottom center; }
+  @media (min-width: 480px) {
+    #section-6 {
+      background: url(../img/hero/hero-6.jpg) no-repeat center center;
+      height: 650px;
+      background-size: 1400px 700px; } }
 
 .color-overlay {
   display: block;
@@ -6815,5 +6913,52 @@ span {
   @media (min-width: 768px) {
     .section-btn-3 {
       margin: 0; } }
+
+.stats-container {
+  background: #454545;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .stats-container li {
+    display: inline-block;
+    height: 70px;
+    margin: 0;
+    float: right;
+    font-size: 18px; }
+
+.plays {
+  width: 100%;
+  background: #ed1c24;
+  padding: 20px 0; }
+  @media (min-width: 768px) {
+    .plays {
+      width: 40%; } }
+
+.shows {
+  width: 33.3%;
+  background: #009edf;
+  padding: 10px 0; }
+  @media (min-width: 768px) {
+    .shows {
+      width: 20%; } }
+
+.episodes {
+  width: 33.3%;
+  background: #8e44ad;
+  padding: 10px 0; }
+  @media (min-width: 768px) {
+    .episodes {
+      width: 20%; } }
+
+.movies {
+  width: 33.3%;
+  background: #16a085;
+  padding: 10px 0; }
+  @media (min-width: 768px) {
+    .movies {
+      width: 20%; } }
 
 /*# sourceMappingURL=main.css.map */

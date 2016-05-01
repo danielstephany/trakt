@@ -33,6 +33,7 @@ a {
 	&:hover,
 	&:active {
 		text-decoration: none;
+		color: #fff;
 	}
 }
 
@@ -42,3 +43,9 @@ span {
 	line-height: 1rem;
 }
 
+
+.clear::after {
+	display: table;
+	content: '';
+	clear: both;
+}
